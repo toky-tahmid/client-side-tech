@@ -1,8 +1,46 @@
+import Swal from "sweetalert2";
 const AddProduct = () => {
   const handleAddProduct = (event) => {
     event.preventDefault();
-    const form = event.target
-    
+    const form = event.target;
+    const name = form.name.value;
+    const photo = form.photo.value;
+    const brand = form.brand.value;
+    const type = form.type.value;
+    const price = form.price.value;
+    const description = form.description.value;
+    const rating = form.rating.value;
+    const newProduct = {name,photo,description,price,brand,type,rating};
+    console.log(newProduct);
+    fetch('http://localhost:5000/product',{
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(newProduct),
+    })
+    .then(res =>res.json())
+    .then(data => {
+        console.log(data);
+        if(data.insertedId){
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              Toast.fire({
+                icon: 'success',
+                title: 'Product Added Successfully'
+              })
+        }
+    })
+
   };
 
   return (
@@ -16,8 +54,7 @@ const AddProduct = () => {
             </label>
             <input
               type="text"
-              id="image"
-              name="image"
+              name="photo"
               placeholder="Image URL"
               className="w-full border rounded px-3 py-2"
             />
@@ -28,7 +65,6 @@ const AddProduct = () => {
             </label>
             <input
               type="text"
-              id="name"
               name="name"
               placeholder="Name"
               className="w-full border rounded px-3 py-2"
@@ -40,7 +76,6 @@ const AddProduct = () => {
             </label>
             <input
               type="text"
-              id="brand"
               name="brand"
               placeholder="Brand Name"
               className="w-full border rounded px-3 py-2"
@@ -52,7 +87,6 @@ const AddProduct = () => {
             </label>
             <input
               type="text"
-              id="type"
               name="type"
               placeholder="Type"
               className="w-full border rounded px-3 py-2"
@@ -63,8 +97,8 @@ const AddProduct = () => {
               Price:
             </label>
             <input
-              type="number"
-              id="price"
+              type="text"
+            
               name="price"
               placeholder="Price"
               className="w-full border rounded px-3 py-2"
@@ -75,7 +109,8 @@ const AddProduct = () => {
               Short Description:
             </label>
             <textarea
-              id="description"
+            type="text"
+              
               name="description"
               placeholder="Short Description"
               className="w-full border rounded px-3 py-2"
@@ -86,8 +121,8 @@ const AddProduct = () => {
               Rating:
             </label>
             <input
-              type="number"
-              id="rating"
+              type="text"
+              
               name="rating"
               placeholder="Rating"
               className="w-full border rounded px-3 py-2"
