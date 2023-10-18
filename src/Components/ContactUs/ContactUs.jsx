@@ -1,3 +1,5 @@
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { BiCurrentLocation } from "react-icons/bi";
 const ContactUs = () => {
   return (
     <>
@@ -9,20 +11,31 @@ const ContactUs = () => {
       <br />
       <div className="flex justify-evenly">
         <div>
-          <h2> OUR INFORMATION</h2>
+
+          <h2 className="text-3xl text-center font-semibold"> OUR INFORMATION</h2>
           <hr />
           <br />
-          <h3>
-            Leo Digital 175 SW 7th St #2009 Miami,
-            <br /> Fl 33130,Dhaka Bangladesh.
-          </h3>
+          <div className="flex gap-3 ">
+            <BiCurrentLocation className="mt-3 text-xl"></BiCurrentLocation>
+            
+            <h3 className="text-xl">
+
+              Leo Digital 7th Floor Miami,
+              <br /> Fl 33130,Dhaka Bangladesh.
+            </h3>
+          </div>
           <br />
           <hr />
-          <h4>Call us: 0123456789</h4>
+          <div className="flex gap-3 ">
+          <AiOutlinePhone className="mt-1 text-xl"></AiOutlinePhone>
+            <h4 className="text-xl">Call us: 0123456789</h4>
+          </div>
           <br />
           <hr />
-          
-          <h4>Email us: demo@demo.com</h4>
+          <div className="flex gap-3 ">
+            <AiOutlineMail className="mt-1 text-xl"></AiOutlineMail>
+            <h4 className="text-xl">Email us: demo@demo.com</h4>
+          </div>
         </div>
 
         <div>

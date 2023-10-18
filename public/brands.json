@@ -2,31 +2,49 @@
     {
       "id": 1,
       "brand_name": "Apple",
-      "brand_image": "https://www.appleking.cz/blog/wp-content/uploads/2023/04/happy-birthday-apple-47-delightful-wallpapers-for-the-47th-v0-6w4zf6j978ra1-1024x576.png"
+      "brand_image": "https://www.appleking.cz/blog/wp-content/uploads/2023/04/happy-birthday-apple-47-delightful-wallpapers-for-the-47th-v0-6w4zf6j978ra1-1024x576.png",
+      "image_url_1": "https://beloved-brands.com/wp-content/uploads/2021/07/apple-advertising-study-aug-2022-scaled.jpg",
+      "image_url_2": "https://techcrunch.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-14-at-12.12.42-PM.png",
+      "image_url_3": "https://www.marketing91.com/wp-content/uploads/2020/06/A-brief-history-of-Apple-Advertising.jpg"
     },
     {
       "id": 2,
       "brand_name": "Samsung",
-      "brand_image": "https://yt3.googleusercontent.com/TtoYXLkyKZu3EDOHAbLjhtpPKwW9eBa0vKacVOmFfq4qzG_Si5KHqzS_u86KO1VIoZJp11scbw=s900-c-k-c0x00ffffff-no-rj"
+      "brand_image": "https://yt3.googleusercontent.com/TtoYXLkyKZu3EDOHAbLjhtpPKwW9eBa0vKacVOmFfq4qzG_Si5KHqzS_u86KO1VIoZJp11scbw=s900-c-k-c0x00ffffff-no-rj",
+      "image_url_1": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/73fbe271026179.5bb6e7af358b6.jpg",
+      "image_url_2": "https://image-us.samsung.com/SamsungUS/samsungbusiness/samsung-ads/life/sa-lasa-hero.jpg?$bu-hero-header-jpg$",
+      "image_url_3": "https://i.ytimg.com/vi/JhDadAyD_5s/maxresdefault.jpg"
     },
     {
       "id": 3,
       "brand_name": "Sony",
-      "brand_image": "https://yt3.googleusercontent.com/trvTsFBmg36XQ4y55jb2eqewRBwAZI4a9AdC6KRoml1OO0nq2Vt6oZn6HukLBIq5yElIoAWDAg=s900-c-k-c0x00ffffff-no-rj"
+      "brand_image": "https://yt3.googleusercontent.com/trvTsFBmg36XQ4y55jb2eqewRBwAZI4a9AdC6KRoml1OO0nq2Vt6oZn6HukLBIq5yElIoAWDAg=s900-c-k-c0x00ffffff-no-rj",
+      "image_url_1": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/24304114401133.562832b6356e9.jpg",
+      "image_url_2": "https://i.pinimg.com/originals/2c/36/b5/2c36b5053aaff27f8e4f610e6095df89.jpg",
+      "image_url_3": "https://images1.the-dots.com/v1/929080.jpg?p=projectImageFullJpg"
     },
     {
       "id": 4,
       "brand_name": "Google",
-      "brand_image": "https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
+      "brand_image": "https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+      "image_url_1": "https://visiblefactors.com/wp-content/uploads/2022/05/google-ads-performance-max-pmax-campaigns-optimization-updates-and-whats-next.png",
+      "image_url_2": "https://visiblefactors.com/wp-content/uploads/2022/05/google-ads-performance-max-pmax-campaigns-optimization-updates-and-whats-next.png",
+      "image_url_3": "https://www.marketing91.com/wp-content/uploads/2020/06/A-brief-history-of-Apple-Advertising.jpghttps://www.privyr.com/blog/wp-content/uploads/2022/11/download-leads-from-google-ads-cover-03-scaled.jpg"
     },
     {
       "id": 5,
-      "brand_name": " Intel",
-      "brand_image": "https://images.mktw.net/im-473096?width=1280&size=1"
+      "brand_name": "Intel",
+      "brand_image": "https://images.mktw.net/im-473096?width=1280&size=1",
+      "image_url_1": "https://miro.medium.com/v2/resize:fit:2000/1*44vZedOoOcczFNo34Xvugw.jpeg",
+      "image_url_2": "https://cdn.arstechnica.net/wp-content/uploads/2013/01/intel-intro-640x426.jpg",
+      "image_url_3": "https://cdn.jwplayer.com/thumbs/Vg7RndmE-1920.jpg"
     },
     {
       "id": 6,
       "brand_name": "MicroSoft",
-      "brand_image": "https://news.microsoft.com/wp-content/uploads/prod/sites/40/2022/03/Screenshot-2022-03-02-102510-1-960x640.png"
+      "brand_image": "https://news.microsoft.com/wp-content/uploads/prod/sites/40/2022/03/Screenshot-2022-03-02-102510-1-960x640.png",
+      "image_url_1": "https://www.traffictoday.nl/wp-content/uploads/2021/07/Microsoft_ads_tours_and_activities-e1625230031949-1280x629.png",
+      "image_url_2": "https://www.searchscientist.co.uk/wp-content/uploads/2019/04/microsoft-advertising-logo.png",
+      "image_url_3": "https://i.ytimg.com/vi/Sh8-8mKbA_g/hqdefault.jpg"
     }
   ]

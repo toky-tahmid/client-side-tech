@@ -8,7 +8,7 @@ const Card = ({ brand }) => {
   return (
     <>
 
-<Link>
+<Link to={`/brandsCard/${ brand_name }`}>
 <div className="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border h-96">
   <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg h-full rounded-xl bg-clip-border">
     <img className="h-full w-full" src={brand_image} alt="profile-picture" />
