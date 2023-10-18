@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "brand_name": "Apple",
+      "brand_image": "https://www.appleking.cz/blog/wp-content/uploads/2023/04/happy-birthday-apple-47-delightful-wallpapers-for-the-47th-v0-6w4zf6j978ra1-1024x576.png"
+    },
+    {
+      "id": 2,
+      "brand_name": "Samsung",
+      "brand_image": "https://yt3.googleusercontent.com/TtoYXLkyKZu3EDOHAbLjhtpPKwW9eBa0vKacVOmFfq4qzG_Si5KHqzS_u86KO1VIoZJp11scbw=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "id": 3,
+      "brand_name": "Sony",
+      "brand_image": "https://yt3.googleusercontent.com/trvTsFBmg36XQ4y55jb2eqewRBwAZI4a9AdC6KRoml1OO0nq2Vt6oZn6HukLBIq5yElIoAWDAg=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "id": 4,
+      "brand_name": "Google",
+      "brand_image": "https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
+    },
+    {
+      "id": 5,
+      "brand_name": " Intel",
+      "brand_image": "https://images.mktw.net/im-473096?width=1280&size=1"
+    },
+    {
+      "id": 6,
+      "brand_name": "MicroSoft",
+      "brand_image": "https://news.microsoft.com/wp-content/uploads/prod/sites/40/2022/03/Screenshot-2022-03-02-102510-1-960x640.png"
+    }
+  ]
