@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const BrandsCard = () => {
   const { brand_name } = useParams();
@@ -32,74 +32,67 @@ const BrandsCard = () => {
   }
   return (
     <>
+      <div className="carousel w-full h-96">
+        <div id="slide1" className="carousel-item relative w-full">
+          <img src="https://beloved-brands.com/wp-content/uploads/2021/07/apple-advertising-study-aug-2022-scaled.jpg" className="w-full" />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide2" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide2" className="carousel-item relative w-full">
+          <img src="https://i.pinimg.com/originals/2c/36/b5/2c36b5053aaff27f8e4f610e6095df89.jpg" className="w-full" />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide3" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide3" className="carousel-item relative w-full">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/73fbe271026179.5bb6e7af358b6.jpg" className="w-full" />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide1" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+      </div>
       <div className="grid grid-cols-2 gap-3 ml-4">
         {brandCards.map((brandCard) => (
           <div key={brandCard._id}>
-            <div className="carousel w-full h-96">
-              <div id="slide1" className="carousel-item relative w-full">
-                <img
-                  src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-                  className="w-full"
-                />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide3" className="btn btn-circle">
-                    ❮
-                  </a>
-                  <a href="#slide2" className="btn btn-circle">
-                    ❯
-                  </a>
-                </div>
-              </div>
-              <div id="slide2" className="carousel-item relative w-full">
-                <img
-                  src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-                  className="w-full"
-                />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide1" className="btn btn-circle">
-                    ❮
-                  </a>
-                  <a href="#slide3" className="btn btn-circle">
-                    ❯
-                  </a>
-                </div>
-              </div>
-              <div id="slide3" className="carousel-item relative w-full">
-                <img
-                  src={brandCard.image_url_1}
-                  className="w-full"
-                />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide2" className="btn btn-circle">
-                    ❮
-                  </a>
-                  <a href="#slide1" className="btn btn-circle">
-                    ❯
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative flex justify-evenly w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-              <div className="relative w-1/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
+            <div className="relative flex justify-evenly max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
                 <img
                   src={brandCard.photo}
                   alt="image"
-                  className="object-cover w-full h-full"
+                  className="w-full h-full"
                 />
               </div>
               <div className="p-6">
-                <h6 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-pink-500 uppercase">
+                <h6 className="block mb-4 font-bold  antialiased  leading-relaxed tracking-normal text-2xl text-blue-500 uppercase">
                   {brandCard.brand_name}
                 </h6>
-                <h4 className=""> Type: {brandCard.type}</h4>
-                <h4>Price: {brandCard.price}</h4>
-                <h4> Rating: {brandCard.rating}</h4>
+                <h4 className=" text-xl font-medium"> Type: {brandCard.type}</h4>
+                <h4 className=" text-xl font-medium">Price: {brandCard.price}</h4>
+                <h4 className=" text-xl font-medium"> Rating: {brandCard.rating}</h4>
 
                 <div className="btn-group mr-10 mt-6">
+                  <Link to={`/updateCard/${brandCard._id}`}>
                   <button className="btn btn-active">Update</button>
-
+                  </Link>
+                  <Link to={`/product/${brandCard._id}`}>
                   <button className="btn">Details</button>
+                  </Link>
                 </div>
               </div>
             </div>
