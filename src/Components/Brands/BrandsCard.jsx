@@ -45,7 +45,7 @@ const BrandsCard = () => {
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img src="https://i.pinimg.com/originals/2c/36/b5/2c36b5053aaff27f8e4f610e6095df89.jpg" className="w-full" />
+          <img src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">
               ❮
@@ -67,7 +67,7 @@ const BrandsCard = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-3 ml-4">
+      <div className="grid-col-1 lg:grid grid-cols-2 gap-3 ml-4">
         {brandCards.map((brandCard) => (
           <div key={brandCard._id}>
             <div className="relative flex justify-evenly max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -82,16 +82,17 @@ const BrandsCard = () => {
                 <h6 className="block mb-4 font-bold  antialiased  leading-relaxed tracking-normal text-2xl text-blue-500 uppercase">
                   {brandCard.brand_name}
                 </h6>
+                <h4 className=" text-xl font-medium"> Name: {brandCard.name}</h4>
                 <h4 className=" text-xl font-medium"> Type: {brandCard.type}</h4>
                 <h4 className=" text-xl font-medium">Price: {brandCard.price}</h4>
                 <h4 className=" text-xl font-medium"> Rating: {brandCard.rating}</h4>
 
                 <div className="btn-group mr-10 mt-6">
                   <Link to={`/updateCard/${brandCard._id}`}>
-                  <button className="btn btn-active">Update</button>
+                  <button className="btn btn-success mr-5 ">Update</button>
                   </Link>
                   <Link to={`/product/${brandCard._id}`}>
-                  <button className="btn">Details</button>
+                  <button className="btn btn-info">Details</button>
                   </Link>
                 </div>
               </div>

@@ -12,7 +12,7 @@ const AddProduct = () => {
     const rating = form.rating.value;
     const newProduct = {name,photo,description,price,brand_name,type,rating};
     console.log(newProduct);
-    fetch('http://localhost:5000/product',{
+    fetch('https://server-side-pybun2ziy-tahmids-projects-090073b6.vercel.app/product',{
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -44,7 +44,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen -mt-10">
+    <div className="ml-32 mb-60 lg:flex justify-center items-center h-screen -mt-10">
       <div className="relative flex flex-col text-gray-700  w-96 rounded-xl ">
         <h2 className="text-2xl font-bold mb-6 text-center">Add a Product</h2>
         <form onSubmit={handleAddProduct}>
@@ -130,7 +130,7 @@ const AddProduct = () => {
           </div>
           <button
             type="submit"
-            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-200"
+            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-200 ml-28"
           >
             Add Product
           </button>

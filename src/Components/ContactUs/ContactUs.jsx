@@ -9,10 +9,10 @@ const ContactUs = () => {
         <hr />
       </div>
       <br />
-      <div className="flex justify-evenly">
+      <div className="flex-row  bg-gray-300 lg:flex mx-auto py-24 justify-evenly">
         <div>
 
-          <h2 className="text-3xl text-center font-semibold"> OUR INFORMATION</h2>
+          <h2 className="text-3xl mr-24 lg:text-center font-semibold"> OUR INFORMATION</h2>
           <hr />
           <br />
           <div className="flex gap-3 ">

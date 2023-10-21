@@ -7,13 +7,13 @@ import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
-import MyCart from "./Components/Cart/Mycart";
 import AddProduct from "./Components/AddProduct/AddProduct";
 import Private from "./Private/Private";
 import AuthProvider from "./Provider/AuthProvider";
 import BrandsCard from "./Components/Brands/BrandsCard";
 import BrandsDetails from "./Components/Brands/BrandsDetails";
 import UpdateCard from "./Components/Brands/UpdateCard";
+import MyCart from "./Components/Cart/MyCart";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +36,7 @@ const router = createBrowserRouter([
        {
         path: "/myCart",
         element: <Private><MyCart></MyCart></Private>,
+        loader: () => fetch("https://server-side-pybun2ziy-tahmids-projects-090073b6.vercel.app/carts")
         
        },
        {
@@ -44,19 +45,19 @@ const router = createBrowserRouter([
        },
        {
         path: "/brandsCard/:brand_name",
-        element: <Private><BrandsCard></BrandsCard></Private>,
-        loader: () => fetch("http://localhost:5000/product")
+        element: <BrandsCard></BrandsCard>,
+        loader: () => fetch("https://server-side-pybun2ziy-tahmids-projects-090073b6.vercel.app/product")
        },
        
        {
         path:"/product/:id",
-       element:<BrandsDetails></BrandsDetails>,
-      loader:({params})=>fetch(`http://localhost:5000/product/${params.id}`)
+       element:<Private><BrandsDetails></BrandsDetails></Private>,
+      loader:({params})=>fetch(`https://server-side-pybun2ziy-tahmids-projects-090073b6.vercel.app/product/${params.id}`)
       },
        {
         path:"/updateCard/:id",
-       element:<UpdateCard></UpdateCard>,
-      loader:({params})=>fetch(`http://localhost:5000/product/${params.id}`)
+       element:<Private><UpdateCard></UpdateCard></Private>,
+      loader:({params})=>fetch(`https://server-side-pybun2ziy-tahmids-projects-090073b6.vercel.app/product/${params.id}`)
       },
     ],
   },

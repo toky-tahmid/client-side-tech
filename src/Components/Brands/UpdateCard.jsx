@@ -24,7 +24,7 @@ const UpdateCard = () => {
       rating,
     };
     console.log(newUpdatedProduct);
-    fetch(`http://localhost:5000/product/${card._id}`, {
+    fetch(`https://server-side-pybun2ziy-tahmids-projects-090073b6.vercel.app/product/${card._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -54,7 +54,7 @@ const UpdateCard = () => {
       });
   };
   return (
-    <div className="flex justify-center items-center h-screen -mt-10">
+    <div className="ml-32 mb-60 lg:flex justify-center items-center h-screen -mt-10">
       <div className="relative flex flex-col text-gray-700  w-96 rounded-xl ">
         <h2 className="text-2xl font-bold mb-6 text-center">Update Brand</h2>
         <form onSubmit={handleUpdateProduct}>
@@ -144,7 +144,7 @@ const UpdateCard = () => {
           </div>
           <button
             type="submit"
-            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-200"
+            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-200 ml-32"
           >
             Update Product
           </button>
