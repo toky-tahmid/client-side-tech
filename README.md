@@ -1,8 +1,6 @@
 Website name:ElectroTech
 website Link: https://client-side-ad087.web.app/
 
-Q.1-Add at least 5 mentioning different features and functionalities of your website?
-Ans:
 
 1.Home: In the Home page there is a navbar that shows the routes to go thorough another page. there is a banner some brand cards and some details about Us and a footer the brand cards are dynamically shown.The cards are in a private route
 
